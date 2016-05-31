@@ -12,3 +12,6 @@ As you work on a project, you won't change the original one and you won't bother
 Commit is saving the changes.
 * What is a merge conflict?
 Sometimes when you do a change&commit but it doesn't get updated in the master.
+
+
+change
