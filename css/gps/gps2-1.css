@@ -1,0 +1,31 @@
+.column-1 {
+  width: 45%;
+  float: left;
+  padding: 10px;
+  border-style: solid;
+ }
+
+.column-2 {
+  width:45%;
+  float:left;
+  padding: 10px;
+  border-style: solid;
+
+}
+
+footer{
+
+  clear: both;
+
+}
+h2 {
+  color: red;
+}
+img {
+  width: 35%;
+  clear:left;
+  margin-right: 100px;
+  margin-left: 320px;
+
+
+}
