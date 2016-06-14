@@ -1,0 +1,18 @@
+ELEVATOR 
+
+- Push the button to call the elevator to your floor.
+	-If it takes more than 5 minutes waiting call the attendance using the phone 	on the wall.
+- Get inside the elevator after the doors open. 
+
+- Press the button which has the floor number you desire to go.
+#The elevator will move, and stop when it reaches to a new floor.
+- If it is your floor, get out after the doors open.
+	- If it is not your floor, wait until it reaches your floor.
+
+CAR-WASH
+
+- Rinse the whole car.
+- Apply towel that you had mixed with soap and water.
+- Immediately rinse the whole car so it doesn’t get marks all over!
+	- If someone sees you and call the authorities because you are dumping soap 	to the drain, stop everything and abort the mission! If not, continue.
+- Right after you rinse it, apply microfiber towel in every inches of the vehicle.
