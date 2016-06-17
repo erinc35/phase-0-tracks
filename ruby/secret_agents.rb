@@ -3,17 +3,19 @@ alf = "abcdefghijklmnopqrstuvwxyz"
 i = 0
 answer = []
 	while i < str.length
-	if str[i] == "z"
+		if str[i] == "z"
 		answer.push("a")
-	end
+		end
 	char = alf.index(str[i])
 	answer.push(alf[char+1])
 	i+=1
 	end
-	puts answer.join
+	answer.join
 end
 
-#encrypt("zfb")
+#p encrypt("abz")
+
+
 
 def decrypt(str)
 alf = "abcdefghijklmnopqrstuvwxyz"
@@ -27,14 +29,21 @@ answer = []
 	puts answer.join
 end
 
+#p decrypt("acd")
+
+#decrypt(encrypt("swordfish"))
+#the answer is "swordfish" again because decyrpting the encrypted
+#swordfish is like undoing the encryption. First, it advances each letter,
+#then it retards each of them so it goes back to original. 
 
 
-
-#why on decrypt, no need if?
-#decrypt("acd")
 
 puts "Which one do you want? encrypt or decrypt?"
 answer = gets.chomp
+until (answer == "encrypt") || (answer == "decrypt")
+		puts "Please choose either encrypt or decrypt!"
+		answer = gets.chomp
+end
 	if answer == "encrypt"
 		puts "ok then, type ur password"
 		password = gets.chomp
@@ -47,4 +56,6 @@ answer = gets.chomp
 		puts "#{decrypt(password)}"
 	else
 		puts "Please choose either encrypt or decrypt!"
+		answer = gets.chomp
+
 	end
