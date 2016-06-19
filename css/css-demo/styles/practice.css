@@ -10,7 +10,7 @@ section#contact-info {
 
 }
 
-section#contact-info:hover {
+#contact-info:hover {
   background-color: blue;
 }
 
