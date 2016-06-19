@@ -4,37 +4,40 @@ i = 0
 answer = []
 	while i < str.length
 		if str[i] == "z"
-		answer.push("a")
+			answer.push("a")
+		elsif str[i] == " "
+			answer.push(" ")
+		else
+			char = alf.index(str[i])
+			answer.push(alf[char+1])
 		end
-	char = alf.index(str[i])
-	answer.push(alf[char+1])
-	i+=1
+		i+=1
 	end
 	answer.join
 end
 
-#p encrypt("abz")
-
-
+#p encrypt("a z")
 
 def decrypt(str)
 alf = "abcdefghijklmnopqrstuvwxyz"
 i = 0
 answer = []
 	while i < str.length
-	char = alf.index(str[i])
-	answer.push(alf[char-1])
-	i+=1
+		if str[i] == " "
+			answer.push(" ")
+		else
+			char = alf.index(str[i])
+			answer.push(alf[char-1])
+
+		end
+		i+=1
 	end
-	puts answer.join
+	answer.join
 end
 
-#p decrypt("acd")
+#p decrypt("a d")
 
-#decrypt(encrypt("swordfish"))
-#the answer is "swordfish" again because decyrpting the encrypted
-#swordfish is like undoing the encryption. First, it advances each letter,
-#then it retards each of them so it goes back to original. 
+
 
 
 
