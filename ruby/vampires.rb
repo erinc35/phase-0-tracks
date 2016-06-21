@@ -23,16 +23,20 @@ until number_of_employees == answer.to_i
 	puts "Want to enroll in health insurance?"
 	insurance = gets.chomp
 
-	puts "Any allergies?"
-	allergy = gets.chomp
-	until allergy == "done" || allergy == "sunshine"
-		puts "any more allergy?"
-		allergy = gets.chomp
-		if allergy == "sunshine"
-			puts "Probably a vampireee"
-			break
-		end
-	end
+  puts "Any allergies? Type 'done' to exit"
+  allergy = gets.chomp
+
+  loop do
+    if allergy == "done"
+      break
+    elsif allergy == "sunshine"
+      puts "Probably a vampireee"
+      break
+    end
+    puts "Any more alerrgies?"
+    allergy = gets.chom p
+  end
+
 
 	if (age == true) && ((garlicbread == "yes") || (insurance == "yes"))
 		puts "Probably not a vampire"
