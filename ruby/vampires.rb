@@ -34,7 +34,7 @@ until number_of_employees == answer.to_i
       break
     end
     puts "Any more alerrgies?"
-    allergy = gets.chom p
+    allergy = gets.chomp
   end
 
 
