@@ -39,9 +39,11 @@ function make_string(n){
     	var text = "";
     	var letters = "abcdefghijklmnopqrstuvwxyz";
 
-    	for( var i=0; i < Math.floor(Math.random() * 10) +1; i++ )
+    	for( var i=0; i < Math.floor(Math.random() * 10) +1; i++ ){
     	    text += letters.charAt(Math.floor(Math.random() * letters.length));
-    	    arr.push(text)
+    	    
+			 }
+			 arr.push(text)
 	}
     return arr;
 }
