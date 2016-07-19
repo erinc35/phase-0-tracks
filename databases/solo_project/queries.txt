@@ -1,0 +1,37 @@
+1.Display the information in one table (either table is fine).
+
+sqlite> select * from doctors;
+
+1|Tutsiki Yana|43|3
+2|Gary Miller|53|2
+3|Igor Denisov|45|4
+4|Frank McCourt|55|1
+5|Sinji Kagawa|52|3
+
+2. Update an item that meets some condition (you can choose a condition that makes sense).
+
+sqlite> update doctors set age = 61 where name = "Igor Denisov";
+
+3. Display the information in both tables using one query.
+
+sqlite> select doctors.id, doctors.name, doctors.age, countries.name from doctors JOIN countries ON doctors.country_id = countries.id;
+
+1|Tutsiki Yana|43|Japan
+2|Gary Miller|53|Canada
+3|Igor Denisov|61|Russia
+4|Frank McCourt|55|Scotland
+5|Sinji Kagawa|52|Japan
+
+4. Display a narrower selection of columns (fewer columns than all of them, in other words) from both tables using one query.
+
+sqlite> select doctors.name, countries.name from doctors JOIN countries ON doctors.country_id = countries.id;
+
+Tutsiki Yana|Japan
+Gary Miller|Canada
+Igor Denisov|Russia
+Frank McCourt|Scotland
+Sinji Kagawa|Japan
+
+5. Delete an item that meets some condition (you can choose a condition that makes sense).
+
+sqlite> delete from doctors where name = "Sinji Kagawa";
